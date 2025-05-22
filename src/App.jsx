@@ -19,13 +19,9 @@ function gerarSenhaAleatoria(tamanho) {
 }
  const [senha,setSenha] = useState(gerarSenhaAleatoria(25))
 
-//Criar Função copiar
-function copiar(hj){
-  console.log(hj)
-  
-}
 
-const [valor, setValor] = useState(25);
+
+const [valor, setValor] = useState(15);
 
 return (
   <div> 
@@ -38,7 +34,7 @@ return (
         type="range"
         id="slider"
         min="3"
-        max="50"
+        max="30"
         value={valor}
         onChange={(e) => setValor(e.target.value)}
         onClick={()=>setSenha(gerarSenhaAleatoria(valor))}
