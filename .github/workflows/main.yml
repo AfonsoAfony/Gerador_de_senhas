@@ -34,8 +34,8 @@ jobs:
     - name: Deploy to Netlify
       uses: nwtgck/actions-netlify@v3.0
       with:
-        publish-dir: ./dist #./build  ou ./dist se usar Vite
+        publish-dir: ./build #./build  ou ./dist se usar Vite
         production-deploy: true
       env:
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{secrets.NETLIFY_AUTH_TOKEN}}
+        NETLIFY_SITE_ID: ${{secrets.NETLIFY_SITE_ID}}
