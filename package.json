@@ -5,13 +5,10 @@
   "type": "module",
   "scripts": {
     "test:frontend": "vitest run",
-    "test:backend": "jest", 
+    "test:backend": "jest",
     "test": "echo \"test(vitetest-para frontend apenas) running...\" && npm run test:frontend ",
-
     "dev": "vite",
-
     "build": "CI=false && echo \"Build running...\" && vite build",
-    
     "lint": "echo \"Lint Running... Analisando o código com eslint\" && eslint .",
     "preview": "vite preview"
   },
@@ -31,6 +28,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vitest": "^3.2.4"
   }
 }
