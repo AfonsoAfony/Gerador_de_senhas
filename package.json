@@ -4,9 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "test:frontend": "vitest run",
+    "test:backend": "jest", 
+    "test": "echo \"test(vitetest-para frontend apenas) running...\" && npm run test:frontend ",
+
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
+
+    "build": "CI=false && echo \"Build running...\" && vite build",
+    
+    "lint": "echo \"Lint Running... Analisando o código com eslint\" && eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
